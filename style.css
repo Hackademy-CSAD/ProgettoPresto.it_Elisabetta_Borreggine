@@ -4,3 +4,130 @@
     --acc: #673C34;
     --tir: #FDE600;
 }
+
+nav{
+    font-family: "Madimi One";
+}
+h1, h2{
+    font-family: "Madimi One";
+}
+body{
+    font-family: "Poppins";
+}
+
+.header-custom{
+    background:linear-gradient(black, transparent), url(https://i.pinimg.com/originals/0f/fe/b8/0ffeb8eea6c54dddb2f9874214c408bf.gif);
+    background-size: contain;
+    background-position: 50% 50%;
+}
+
+h1{
+   -webkit-text-stroke: 5px #000000
+}
+
+h2{
+    -webkit-text-stroke: 4px #000000
+}
+
+.h1color, .h2color{
+    color: var(--main);
+}
+
+.nav-link, .navbar-brand, .bi-person-fill, .bi-three-dots-vertical{
+    color: var(--main);
+}
+
+.navbar-brand:focus, .nav-link:focus, .bi-person-fill:focus, .bi-three-dots-vertical:focus{
+    color: #FB1986 !important;
+}
+
+.navbar-brand{
+    font-size: 25px;
+}
+
+.nav-link:hover, .navbar-brand:hover{
+    color: var(--sec);
+}
+
+.h1color:hover, .h2color:hover{
+    color: var(--sec)
+}
+
+.navbarScroll{
+    background-color: var(--sec);
+    transition: 1s;
+}
+
+.custom-vh{
+    height: 200px;
+}
+
+.skill{
+    width: 160px;
+    height: 160px;
+    position: absolute;
+}
+
+.outer{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7)
+}
+
+.inner{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05); 
+}
+
+#firstNumber{
+    font-weight: 600;
+    color: black;
+    
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+    
+}
+svg{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim {
+    100%{
+    stroke-dashoffset: 47.2;  
+    }
+}
+
+/* .counterfont{
+    font-family: "Madimi One";
+    font-size: xx-large;
+}
+.counterfont2{
+    font-family: "Poppins";
+}
+
+.list-link{
+   font-size: 25px;
+   
+}
+ */
