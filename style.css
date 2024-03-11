@@ -12,13 +12,25 @@ h1, h2{
     font-family: "Madimi One";
 }
 body{
-    font-family: "Poppins";
+    font-family: "Poppins";  
+}
+/* css header */
+.header-custom{
+    background:linear-gradient(#330f28, transparent), url(??);
+    background-size: cover;
+    background-position: center;
 }
 
-.header-custom{
-    background:linear-gradient(black, transparent), url(https://i.pinimg.com/originals/0f/fe/b8/0ffeb8eea6c54dddb2f9874214c408bf.gif);
-    background-size: contain;
-    background-position: 50% 50%;
+.header-customAnnunci{
+    background:linear-gradient(#330f28, transparent), url(??);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-customChisiamo{
+    background:linear-gradient(#330f28, transparent), url(??);
+    background-size: cover;
+    background-position: center;
 }
 
 h1{
@@ -29,11 +41,59 @@ h2{
     -webkit-text-stroke: 4px #000000
 }
 
-.h1color, .h2color{
+.h1color{
+    color: var(--sec);
+}
+
+.h2color{
+    color: var(--main)
+}
+.h1color:hover{
     color: var(--main);
 }
 
-.nav-link, .navbar-brand, .bi-person-fill, .bi-three-dots-vertical{
+.h2color:hover{
+    color: #1FC3D4;
+}
+
+h1, h2{
+    animation-name: title;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes title {
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+  }
+
+.btnOrder{
+    background-color: #1FC3D4;
+    font-family: "Madimi One";
+    border-radius: 50px;
+    font-size: 25px;
+    color: #FB1986;
+    margin-top: 100px;
+    border: none;
+    box-shadow: 0px 0px 2px 5px #FB1986 ;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.btnOrder:hover{
+    background-color: #FB1986;
+    color: #1FC3D4;
+    box-shadow: 0px 0px 2px 5px #1FC3D4;
+
+}
+/* css navbar */
+.navbar-brand{
+    color: var(--sec);
+}
+
+.nav-link,  .bi-person-fill, .bi-three-dots-vertical{
     color: var(--main);
 }
 
@@ -41,67 +101,114 @@ h2{
     color: #FB1986 !important;
 }
 
+.navbar-toggler:focus{
+    border:none !important;
+    box-shadow:none;
+}
+
 .navbar-brand{
     font-size: 25px;
 }
 
-.nav-link:hover, .navbar-brand:hover{
+.navbar-nav{
+    padding-right: 100px;
+}
+
+.navbar-brand:hover{
+    color: var(--main)
+}
+
+.nav-link:hover{
     color: var(--sec);
 }
 
-.h1color:hover, .h2color:hover{
-    color: var(--sec)
-}
-
+.list-link{
+    font-size: 25px;
+ }
+ 
 .navbarScroll{
-    background-color: var(--sec);
+    background-color: var(--acc);
     transition: 1s;
 }
 
+/* spazio e dopo titolo + carousel */
 .custom-vh{
-    height: 200px;
+    height: 150px;
 }
 
-.skill{
-    width: 160px;
-    height: 160px;
-    position: absolute;
-}
-
-.outer{
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    padding: 20px;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-                -6px -6px 10px -1px rgba(255, 255, 255, 0.7)
-}
-
-.inner{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
+.swiperTitle{
+    color: #FB1986;
     justify-content: center;
-    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-                0px 12px 10px -10px rgba(0, 0, 0, 0.05); 
+    border: none;
+    margin-top: 10vh;
 }
 
-#firstNumber{
-    font-weight: 600;
-    color: black;
+.swiperTitle:hover{
+    color: #1FC3D4;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  
+  
+  /* tutto il css del counter */
+  
+  /* .skill{
+      width: 160px;
+      height: 160px;
+      position: absolute;
+    }
     
-}
-
-circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 472;
+    .outer{
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        padding: 20px;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7)
+    }
+    
+    .inner{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05); 
+    }
+      
+    #firstNumber{
+        font-weight: 600;
+        color: black;
+    
+    }
+    
+    circle{
+        fill: none;
+        stroke: url(#GradientColor);
+        stroke-width: 20px;
+        stroke-dasharray: 472;
     stroke-dashoffset: 472;
     animation: anim 2s linear forwards;
     
@@ -114,9 +221,9 @@ svg{
 
 @keyframes anim {
     100%{
-    stroke-dashoffset: 47.2;  
+        stroke-dashoffset: 47.2;  
     }
-}
+} */
 
 /* .counterfont{
     font-family: "Madimi One";
@@ -124,10 +231,106 @@ svg{
 }
 .counterfont2{
     font-family: "Poppins";
+} */
+
+/* css card */
+ .customCard{
+    border: solid 5px var(--acc);
+    border-radius: 10%;
+    image-rendering: auto;
+    height:475px;
 }
 
-.list-link{
-   font-size: 25px;
-   
+.btnCustom{
+    background-color: var(--sec);
+    border: solid 3px var(--main);
+    color: var(--acc); 
 }
- */
+
+.btnCustom:hover{
+    background-color: var(--main);
+    border: solid 5px var(--sec);
+    color: var(--acc);
+} 
+/* css footer */
+footer{
+    margin-top: 80px;
+    background-color: var(--acc);
+    color: var(--sec);
+  }
+
+  .footer{
+    min-height: 40vh;
+
+  }
+
+  ul{
+    list-style-type: none;
+  }
+
+  .customFooter{
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fontPfooter{
+    font-family: "Madimi One";
+    font-weight: bold;
+    color: #1FC3D4;
+    font-size: x-large;
+  }
+
+  .fontPfooter2{
+    font-family: "Madimi one";
+    font-weight: bold;
+    color: #FB1986;
+    margin-left: 8px;
+    font-size: x-large;
+  }
+
+  .ulFooter{
+    font-family: "Poppins";
+  }
+
+  .customInput{
+    border-radius: 10px;
+    border-color: #1FC3D4;
+    border-width: 3px;
+  }
+
+  .aCustom{
+    text-decoration: none;
+    color: #1FC3D4;
+    font-size: 20px;
+  }
+
+  .biSize{
+    font-size: 20px;
+  }
+
+
+
+  
+
+
+/* media query per responsive */
+
+@media screen and (max-width: 670px) {
+
+    .custom-vh{
+        height: 75px;
+    }
+   .list-link{
+    text-align: end;
+    }
+   .navbar-nav{
+    padding-right: 0px !important;
+    }
+    .bi-cart2{
+        margin-right: 14px !important;
+    }
+    h1{
+      padding-top: 150px !important;  
+    }
+}

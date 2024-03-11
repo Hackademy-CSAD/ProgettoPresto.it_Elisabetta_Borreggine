@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Presto.it</title>
+    <title>AMERICAN DONUTS</title>
     <!-- cdn bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- cdn icons bootstrap -->
@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Madimi+One&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- css costum -->
     <link rel="stylesheet" href="./style.css">
   </head>
@@ -26,18 +28,18 @@
           <i class="bi bi-three-dots-vertical display-6"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-link">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-link display-6 text-end">
             <li class="nav-item">
-              <a class="nav-link mx-3" aria-current="page" href="#">HOME</a>
+              <a class="nav-link mx-3" aria-current="page" href="./index.html">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-3" href="#">CHI SIAMO</a>
+              <a class="nav-link mx-3" href="./chi-siamo.html">CHI SIAMO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-3" href="#">TUTTI GLI ARTICOLI</a>
+              <a class="nav-link mx-3" href="#">CONTATTI</a>
             </li>         
           </ul>
-          <a class="nav-link" href=""><i class="bi bi-person-fill d-none d-md-flex display-6 me-5"></i></a>
+          <a class="nav-link text-end" href=""><i class="bi bi-cart2 display-6 me-5"></i></a>
         </div>
       </div>
     </nav>
@@ -46,150 +48,137 @@
     <header class="container-fluid">
       <div class="row text-center vh-100 align-items-center justify-content-center header-custom text-light">
         <div class="col-12">
-          <h1 class="display-1 h1color">AMERICAN DONUTS</h1>
-          <h2 class="h2color display-4">LE CIAMBELLE COL BUCO</h2>
+          <h1 class="display-1 h1color mt-5">AMERICAN DONUTS</h1>
+          <h2 class="h2color display-1">LE CIAMBELLE COL BUCO</h2>
+          <a href="./annunci.html"><button type="button" class="btnOrder">ORDINA ADESSO</button></a>
         </div>
       </div>
     </header>
-    
-<div class="custom-vh">
-  
+    <!-- fine header inizio carousel -->
+    <main>
+      <!-- prima sezione -->
+    <div class="custom-vh">
+      <h2 class="swiperTitle d-flex display-1">I NOSTRI CLIENTI</h2>
+    </div>
+
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="./mediaCarousel/141aa245893ea325882909496aea61e6.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./mediaCarousel/177c415a10665a3be3539584cfb89681.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./mediaCarousel/58d776bb2a6e323c145725632357d7b0.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./mediaCarousel/fc8a9706d37c168009965dd5c851b61a.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./mediaCarousel/961205358ee7607b02a66b40468cc20b.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./mediaCarousel/8c3fb3a0c77e8ac282399b0c7cd63913.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./mediaCarousel/98504ca7b318086c0e2b1e6814a7bae7.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./mediaCarousel/e9048e470f94654fd162280fc05b43e0.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./mediaCarousel/eae34db68e65e8c033c16719b4aa1013.jpg" />
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
 </div>
 
-<main>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <div class="skill">
-          <div class="outer">
-            <div class="inner">
-              <div id="firstNumber">
-                 1
-              </div>
+<!-- sezione 2 counter.html  -->
 
-            </div>
+<!-- <div class="container border-3 counterfont">
+  <div class="row">
+    <div class="col-12">
+      <div class="card border border-info" style="width: 20rem;">
+<div class="card-header">
+  OUR INFORMATION
+</div>
+<ul class="list-group list-group-flush items">
+  <div>
+  <li class="list-group-item border border-info counterfont2">I nostri clienti</li>
+  <li class="list-group-item" id="firstNumber">1</li>
+ </div>
+ <div>
+  <li class="list-group-item border border-info counterfont2">Prodotti venduti</li>
+  <li class="list-group-item" id="secondNumber">1</li>
+ </div>
+ <div>
+  <li class="list-group-item border border-info counterfont2">Recensioni positive</li>
+  <li class="list-group-item" id="thirdNumber">1</li>
+ </div>
+</ul>
+</div>
+    </div> 
+  </div>
+</div> -->
 
-          </div>
+
+
+<!-- FOOTER -->
+<footer class="container-fluid">
+  <div class="row justify-content-around align-items-center footer">
+    <div class="col-12 col-md-3 d-flex justify-content-center">
+      <ul class="ulFooter">
+        <li><a class="aCustom" href="#">Location</a></li>
+        <li><a class="aCustom" href="#">Privacy Police</a></li>
+        <li><a class="aCustom" href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+      <div class="col-12 col-md-3 d-flex justify-content-center customFooter">
+        <p><span class="fontPfooter">SIGN UP AL NOSTRO </span><span class="fontPfooter2"> AMERICAN DONUTS</span></p>
+        <p class="text-light">Dove tutte le ciambelle hanno il buco</p>
+        <input class="ulFooter customInput" id="inputFooter" type="text" placeholder="Inserisci la tua email">
+        <div id="containerFooter">
 
         </div>
-
-      </div>
-
+        <a href="#"><button type="button" class="btnOrder" id="bottoneFooter">ISCRIVITI</button></a>
     </div>
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-  <defs>
-    <linearGradient id="GradientColor">
-        <stop offset="0%" stop-color="#FB1986" />
-        <stop offset="100%" stop-color="#1FC3D4" />
-    </linearGradient>
-  </defs>
-  <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-</svg>
-
-
-
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-<main>
-  section3
-  <div class="container border-3 counterfont">
-    <div class="row">
-      <div class="col-12">
-        <div class="card border border-info" style="width: 20rem;">
-  <div class="card-header">
-    OUR INFORMATION
-  </div>
-  <ul class="list-group list-group-flush items">
-    <div>
-    <li class="list-group-item border border-info counterfont2">I nostri clienti</li>
-    <li class="list-group-item" id="firstNumber">1</li>
-   </div>
-   <div>
-    <li class="list-group-item border border-info counterfont2">Prodotti venduti</li>
-    <li class="list-group-item" id="secondNumber">1</li>
-   </div>
-   <div>
-    <li class="list-group-item border border-info counterfont2">Recensioni positive</li>
-    <li class="list-group-item" id="thirdNumber">1</li>
-   </div>
-  </ul>
-</div>
-      </div> 
+    <div class="col-12 col-md-3 d-flex justify-content-center">
+      <ul class="ulFooter">
+        <li><i class="bi bi-instagram biSize"></i></li>
+        <li><i class="bi bi-facebook biSize"></i></li>
+        <li><i class="bi bi-twitter-x biSize"></i></li>
+      </ul>
     </div>
   </div>
-</main> -->
-
-
-<div class="vh-100">
-
-</div>
-
-
-    
-
-
-
+</footer>
 
 
 
 
     <!-- js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
     <!-- main js -->
     <script src="./main.js"></script>
   </body>

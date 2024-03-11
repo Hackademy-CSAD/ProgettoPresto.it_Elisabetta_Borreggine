@@ -1,15 +1,18 @@
+//js scrollo navbar
 let navbar = document.querySelector('#navbar')
 
 document.addEventListener('scroll', ()=>{
     let scrolled = window.scrollY
     if(scrolled > 500){
         navbar.classList.add('navbarScroll')
+        navbar.classList.add('navbartextColor')
     }else{
         navbar.classList.remove('navbarScroll')
+        navbar.classList.remove('navbartextColor')
     }
 })
 
-// chiamamte asincrone
+// chiamamte asincrone js creazione counter
 let check = true
 function createInterval(n,element, time){
     let counter = 0;
@@ -30,7 +33,6 @@ function createInterval(n,element, time){
     
 }
 
-
 let osservatore = new IntersectionObserver((entries)=>{
     entries.forEach(entry=>{
         if(entry.isIntersecting && check == true){ 
@@ -45,11 +47,15 @@ let osservatore = new IntersectionObserver((entries)=>{
 osservatore.observe(firstNumber)
 
 
-// libreria swiper (framework per carousel)https://swiperjs.com/ prendere cdn => andiamo in demo , sciegliere carousel e andare su core . Uscira' un codice : prendersi cdn css e cdn js, poi copiare l'elemento , e prendersi anche il css (copiare solo le classi che fanno riferimento a swiper)
+let bottoneFooter = document.querySelector('#bottoneFooter')
+let inputFooter = document.querySelector ('#inputFooter')
+let containerFooter = document.querySelector('#containerFooter')
 
-//per fare off canvas con filtri
-//creare altra pagina html 
-//1) copiare l'head , nav bar , header e footer , (il main non ci interessa) e incollo in annunci.html, mi copio lo script di bootstrap, fontawsome e il mio e incollo in annunci.html (inserisco una nuova pagina js annunci.js)
-// cambio il titolo dall'head , e anche il titolo e le dimensioni dell'h1 che sara' h4 e si chiamera' tutti gli annunci 
-
+bottoneFooter.addEventListener('click', ()=>{
+    if(inputFooter.value == ``){
+        let p = document.createElement('p')
+        p.innerHTML="Campo obbligatoio"
+    containerFooter.appendChild(p)
+    }
+})
 
