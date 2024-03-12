@@ -3,7 +3,7 @@ let navbar = document.querySelector('#navbar')
 
 document.addEventListener('scroll', ()=>{
     let scrolled = window.scrollY
-    if(scrolled > 500){
+    if(scrolled > 300){
         navbar.classList.add('navbarScroll')
     }else{
         navbar.classList.remove('navbarScroll')
@@ -43,8 +43,8 @@ fetch("./annunci.json").then((response)=>response.json()).then ((data)=>{
 
     function radioCreate(array){
         let categorie = array.map(annuncio => annuncio.category)
-        let uniquecategoires = Array.from(new Set(categorie)) 
-        uniquecategoires.forEach(categoria=>{
+        let uniquecategories = Array.from(new Set(categorie)) 
+        uniquecategories.forEach(categoria=>{
             let div = document.createElement('div')
             div.innerHTML = ` <input class="form-check-input" type="radio" name="categoria" id="${categoria}">
             <label class="form-check-label" for="${categoria}">
@@ -56,7 +56,10 @@ fetch("./annunci.json").then((response)=>response.json()).then ((data)=>{
 
     }
     
+
     radioCreate(data)
+
+
 
     let radioBtn = document.querySelectorAll('.form-check-input')
 
@@ -66,17 +69,99 @@ fetch("./annunci.json").then((response)=>response.json()).then ((data)=>{
         if(btnChecked.id != 'All'){
             let filtered = array.filter(annuncio => annuncio.category == btnChecked.id)
             containerCard.innerHTML = ``
-            showCards(filtered)
+            return filtered
         }else{
-            showCards(array)
+           return array
         }
      }
     
 
      radioBtn.forEach(btn=>{
          btn.addEventListener('click', ()=>{
-            filterbycategories(data)
+            globalFilter()
         })
 
+///filtro prezzo
+
+let priceValue = document.querySelector('#priceValue')
+let priceInput = document.querySelector('#priceInput')
+
+function setPriceinput(array) {
+    let prices = array.map(annuncio => Number(annuncio.price))
+    console.log(prices);
+    prices.sort((a ,b)=> a - b)
+    let maxPrice = prices.pop()
+
+    priceInput.max = maxPrice
+    priceInput.value = maxPrice
+    priceValue.innerHTML = `${maxPrice} $`
+    
+}
+
+
+setPriceinput(data)
+
+
+function filterByPrice(array) {
+    let filtered = array.filter(annuncio => annuncio.price<= Number(priceInput.value))
+    console.log(typeof priceInput.value);
+    console.log(filtered);
+    containerCard.innerHTML = ``
+    return filtered
+}
+
+
+priceInput.addEventListener('input', ()=>{
+    priceValue.innerHTML = `${priceInput.value} $`
+    globalFilter()
 })
+
+
+let inputWord = document.querySelector('#inputWord')
+
+function filterByWord(array) {
+    let filtered = array.filter(annuncio => annuncio.name.includes(inputWord.value))
+    containerCard.innerHTML = ``
+    return filtered
+}
+
+
+
+inputWord.addEventListener('input', ()=>{
+    globalFilter()
+})
+
+
+function globalFilter(){
+    let filtratiPerCategoria = filterbycategories(data) // annunci filtrati per categoria
+    let filtratiPerPrezzo = filterByPrice(filtratiPerCategoria) // annunci filtrati per categoria e prezzo
+    let filtratiPerParola = filterByWord(filtratiPerPrezzo) // annunci filtrati per cateogria prezzo e parola
+    showCards(filtratiPerParola)
+
+}
+
+})
+    
+})
+
+
+//js Footer
+
+let bottoneFooter = document.querySelectorAll('#bottoneFooter')
+let inputFooter = document.querySelector ('#inputFooter')
+let containerFooter = document.querySelector('#containerFooter')
+let confirm =false
+bottoneFooter.forEach(bottone =>{
+        bottone.addEventListener('click', ()=>{
+            let p = document.createElement('p')
+        if(inputFooter.value == `` && confirm == false){
+            p.innerHTML="Campo obbligatoio"
+            confirm = true
+            containerFooter.appendChild(p)
+        }else{
+            confirm = false
+           containerFooter.innerHTML=``
+        }  
+        
+    })
 })

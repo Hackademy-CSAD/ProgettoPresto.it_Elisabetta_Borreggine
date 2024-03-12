@@ -37,10 +37,10 @@
               <a class="nav-link mx-3" href="./chi-siamo.html">CHI SIAMO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-3" href="#">CONTATTI</a>
+              <a class="nav-link mx-3" href="./annunci.html">SHOPPING</a>
             </li>         
           </ul>
-          <a class="nav-link" href=""><i class="bi bi-cart2 display-6 me-5"></i></a>
+          <a class="nav-link" href="#"><i class="bi bi-cart2 display-6 me-5"></i></a>
         </div>
       </div>
     </nav>
@@ -49,8 +49,8 @@
     <header class="container-fluid">
       <div class="row text-center vh-100 align-items-center justify-content-center header-customAnnunci text-light">
         <div class="col-12">
-          <h1 class="display-1 h1color">DIRETTAMENTE DA SPRINGFIELD</h1>
-          <h2 class="h2color display-1">DOLCEZZA AL PRIMO MORSO</h2>
+          <h1 class=" h1header display-1 h1color">DIRETTAMENTE DA SPRINGFIELD</h1>
+          <h2 class="h2header h2color display-1">DOLCEZZA AL PRIMO MORSO</h2>
         </div>
       </div>
     </header>
@@ -60,7 +60,7 @@
         <section class="container">
             <div class="row text-center">
                 <div class="col-12">
-                  <h2 class="swiperTitle d-flex display-1">I NOSTRI DONUTS</h2>
+                  <h2 class=" h2Annunci d-flex display-1">I NOSTRI DONUTS</h2>
                   <!-- bottone filtri -->
                     <button class="btn btn-outline-dark btnOrder mb-5 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">FILTRI</button>
                 </div>
@@ -79,65 +79,82 @@
           </section>
 
 <!-- filtri offcanvas -->
-        <div class="offcanvas bg-info offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-          <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header offcanvasbg">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body offcanvasbg">
+      <!-- categorie -->
+      <div>
+          <h2 class="h2OffCanvas">Categoria</h2>
+          <div class="form-check" id="containerCategories">
+              <input class="form-check-input" type="radio" name="categoria" id="All" checked>
+              <label class="form-check-label" for="All">
+                Tutte le categorie
+              </label>
           </div>
-          <div class="offcanvas-body">
-              <!-- categorie -->
-              <div>
-                  <h2>categoria</h2>
-                  <div class="form-check" id="containerCategories">
-                      <input class="form-check-input" type="radio" name="categoria" id="All" checked>
-                      <label class="form-check-label" for="All">
-                        tutte le categorie
-                      </label>
-                  </div>
-              </div>
-              <!-- prezzo -->
-              <div>
-                  <h2>Prezzo</h2>
-                  <label for="customRange1" class="form-label">Example range</label>
-                  <input type="range" class="form-range" id="customRange1">
-              </div>
-              <!-- parola -->
-              <div>
-                  <h2>Parola</h2>
-                  <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-              </div>
-          </div>
-          </div>
+      </div>
+      <!-- prezzo -->
+      <div>
+          <h2 class="h2OffCanvas">Prezzo</h2>
+          <label for="customRange1" class="form-label" id="priceValue">Example range</label>
+          <input type="range" class="form-range" id="priceInput">
+      </div>
+      <!-- parola -->
+      <div>
+          <h2 class="h2OffCanvas">Parola</h2>
+          <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="inputWord">
+            </div>
+      </div>
+  </div>
+  </div>
+
   </main>
 
-  <!-- footer -->
-  <footer class="container-fluid">
-    <div class="row justify-content-around align-items-center footer">
-      <div class="col-12 col-md-3 d-flex justify-content-center">
-        <ul class="ulFooter">
-          <li><a class="aCustom" href="#">Location</a></li>
-          <li><a class="aCustom" href="#">Privacy Police</a></li>
-          <li><a class="aCustom" href="#">Terms of Service</a></li>
-        </ul>
-      </div>
-        <div class="col-12 col-md-3 d-flex justify-content-center customFooter">
-          <p><span class="fontPfooter">SIGN UP AL NOSTRO </span><span class="fontPfooter2"> AMERICAN DONUTS</span></p>
-          <p class="text-light">Dove tutte le ciambelle hanno il buco</p>
-          <input class="ulFooter customInput" type="text" placeholder="Inserisci la tua email">
-          <a href="#"><button type="button" class="btnOrder">ISCRIVITI</button></a>
-      </div>
-      <div class="col-12 col-md-3 d-flex justify-content-center">
-        <ul class="ulFooter">
-          <li><i class="bi bi-instagram biSize"></i></li>
-          <li><i class="bi bi-facebook biSize"></i></li>
-          <li><i class="bi bi-twitter-x biSize"></i></li>
-        </ul>
-      </div>
+  <!-- FOOTER -->
+<footer class="container-fluid">
+  <div class="row justify-content-around align-items-center footer">
+    <div class="col-12 col-md-3 d-flex justify-content-center">
+      <ul class="ulFooter d-none d-md-block">
+        <li><a class="aCustom" href="#">Location</a></li>
+        <li><a class="aCustom" href="#">Privacy Police</a></li>
+        <li><a class="aCustom" href="#">Terms of Service</a></li>
+      </ul>
     </div>
-  </footer>
-  
+      <div class="col-12 col-md-3 d-flex justify-content-center customFooter">
+        <p><span class="fontPfooter">SIGN UP AL NOSTRO </span><span class="fontPfooter2"> AMERICAN DONUTS</span></p>
+        <p class="text-light">Dove tutte le ciambelle hanno il buco</p>
+        <div class="d-flex justify-content-around responsiveFooter align-items-center">
+          <input class="ulFooter customInput" id="inputFooter" type="text" placeholder="Inserisci la tua email">
+          <button type="button" class="btnOrder w-25 d-inline d-md-none" id="bottoneFooter">ISCRIVITI</button>
+        </div>
+        <div id="containerFooter">
+
+        </div>
+        <div class="justify-content-center">
+          <button type="button" class="btnOrder w-25 d-none d-md-inline" id="bottoneFooter">ISCRIVITI</button>
+
+        </div>
+    </div>
+    <div class="col-12 col-md-3 d-flex justify-content-center">
+      <ul class="ulFooter">
+        <li><i class="bi bi-instagram biSize"></i></li>
+        <li><i class="bi bi-facebook biSize"></i></li>
+        <li><i class="bi bi-twitter-x biSize"></i></li>
+      </ul>
+      <ul class="ulFooter d-block d-md-none">
+        <li><a class="aCustom" href="#">Location</a></li>
+        <li><a class="aCustom" href="#">Privacy Police</a></li>
+        <li><a class="aCustom" href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
 
 
 

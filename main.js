@@ -3,7 +3,7 @@ let navbar = document.querySelector('#navbar')
 
 document.addEventListener('scroll', ()=>{
     let scrolled = window.scrollY
-    if(scrolled > 500){
+    if(scrolled > 300){
         navbar.classList.add('navbarScroll')
         navbar.classList.add('navbartextColor')
     }else{
@@ -11,6 +11,29 @@ document.addEventListener('scroll', ()=>{
         navbar.classList.remove('navbartextColor')
     }
 })
+
+
+//js Footer
+
+let bottoneFooter = document.querySelectorAll('#bottoneFooter')
+let inputFooter = document.querySelector ('#inputFooter')
+let containerFooter = document.querySelector('#containerFooter')
+let confirm =false
+bottoneFooter.forEach(bottone =>{
+        bottone.addEventListener('click', ()=>{
+            let p = document.createElement('p')
+        if(inputFooter.value == `` && confirm == false){
+            p.innerHTML="Campo obbligatoio"
+            confirm = true
+            containerFooter.appendChild(p)
+        }else{
+            confirm = false
+           containerFooter.innerHTML=``
+        }  
+        
+    })
+})
+
 
 // chiamamte asincrone js creazione counter
 let check = true
@@ -47,15 +70,4 @@ let osservatore = new IntersectionObserver((entries)=>{
 osservatore.observe(firstNumber)
 
 
-let bottoneFooter = document.querySelector('#bottoneFooter')
-let inputFooter = document.querySelector ('#inputFooter')
-let containerFooter = document.querySelector('#containerFooter')
-
-bottoneFooter.addEventListener('click', ()=>{
-    if(inputFooter.value == ``){
-        let p = document.createElement('p')
-        p.innerHTML="Campo obbligatoio"
-    containerFooter.appendChild(p)
-    }
-})
 

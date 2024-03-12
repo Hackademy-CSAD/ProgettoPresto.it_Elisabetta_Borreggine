@@ -16,29 +16,33 @@ body{
 }
 /* css header */
 .header-custom{
-    background:linear-gradient(#330f28, transparent), url(??);
+    background:linear-gradient(#330f28, transparent), url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2018%2F04%2F03%2Fkrispy-kreme-simpsons-doughnut.jpg&q=60);
     background-size: cover;
     background-position: center;
+    image-resolution:initial;
 }
 
 .header-customAnnunci{
-    background:linear-gradient(#330f28, transparent), url(??);
+    background:linear-gradient(#330f28, transparent), url(https://media.tenor.com/aQEof9cbEA4AAAAC/the-simpsons-hell.gif);
     background-size: cover;
-    background-position: center;
+    background-position: contain;
+    image-resolution: initial;
 }
 
 .header-customChisiamo{
-    background:linear-gradient(#330f28, transparent), url(??);
+    background:linear-gradient(#330f28, transparent), url(https://akns-images.eonline.com/eol_images/Entire_Site/2014810/rs_1024x759-140910103233-1024.fg19.cm.91014.jpg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top);
     background-size: cover;
     background-position: center;
 }
 
-h1{
+.h1header{
    -webkit-text-stroke: 5px #000000
 }
 
-h2{
-    -webkit-text-stroke: 4px #000000
+.h2header{
+   -webkit-text-stroke: 4px #000000;
+   
+  
 }
 
 .h1color{
@@ -56,7 +60,7 @@ h2{
     color: #1FC3D4;
 }
 
-h1, h2{
+.h1header, .h2header{
     animation-name: title;
     animation-duration: 3s;
     animation-iteration-count: 1;
@@ -141,6 +145,7 @@ h1, h2{
     justify-content: center;
     border: none;
     margin-top: 10vh;
+    -webkit-text-stroke: 4px #000000;
 }
 
 .swiperTitle:hover{
@@ -234,6 +239,13 @@ svg{
 } */
 
 /* css card */
+.h2Annunci{
+    color: #FB1986;
+    -webkit-text-stroke: 4px #000000;
+    justify-content: center;
+    margin-top: 10px;
+    margin-top: 10vh;
+}
  .customCard{
     border: solid 5px var(--acc);
     border-radius: 10%;
@@ -252,7 +264,66 @@ svg{
     border: solid 5px var(--sec);
     color: var(--acc);
 } 
-/* css footer */
+
+/* css off canvas */
+h5{
+    font-family: 'Poppins';
+    color: var(--acc);
+    font-size: 25px;
+}
+
+.h2OffCanvas{
+    -webkit-text-stroke: 2px var(--acc); 
+    color: var(--main);
+    font-size: bold;
+} *
+
+.offcanvasbg{
+    background-color: var(--sec);
+}
+
+/* css card chi siamo */
+.pfont{
+   font-family: 'Poppins';
+   font-size: 25px;
+   margin-top: 50px;
+   color: #673C34;
+}
+
+.cardChiSiamo{
+    border-radius: 10px;
+    border: solid var(--acc)
+}
+
+.cardTitle{
+    font-family: 'Madimi One';
+    color: var(--main);
+    -webkit-text-stroke: 2px var(--acc)
+}
+
+.cardTitle:hover{
+    color: var(--sec);
+}
+
+.cardDescription{
+    color: var(--acc);
+}
+
+.h3{
+    color: var(--sec);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.h3:hover{
+    color: var(--main);
+}
+
+.h2headerPlus{
+    margin-top: 10vh;
+}
+
+/* CSS footer */
 footer{
     margin-top: 80px;
     background-color: var(--acc);
@@ -297,6 +368,7 @@ footer{
     border-radius: 10px;
     border-color: #1FC3D4;
     border-width: 3px;
+    height: 50px;
   }
 
   .aCustom{
@@ -307,7 +379,7 @@ footer{
 
   .biSize{
     font-size: 20px;
-  }
+  } 
 
 
 
@@ -333,4 +405,23 @@ footer{
     h1{
       padding-top: 150px !important;  
     }
+    .btnOrder{
+        margin-top: 10px;
+        height: 35px;
+        
+    }
+    .responsiveFooter{
+        margin-bottom: 20px;
+    }
+    .ulFooter{
+        margin-top: 20px;
+    }
+    .customFooter{
+        margin-top: 20px;
+    }
+    .cardChiSiamo{
+        margin-top: 10px;
+    }
+    
+
 }

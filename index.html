@@ -36,10 +36,10 @@
               <a class="nav-link mx-3" href="./chi-siamo.html">CHI SIAMO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-3" href="#">CONTATTI</a>
+              <a class="nav-link mx-3" href="./annunci.html">SHOPPING</a>
             </li>         
           </ul>
-          <a class="nav-link text-end" href=""><i class="bi bi-cart2 display-6 me-5"></i></a>
+          <a class="nav-link text-end" href="#"><i class="bi bi-cart2 display-6 me-5"></i></a>
         </div>
       </div>
     </nav>
@@ -48,8 +48,8 @@
     <header class="container-fluid">
       <div class="row text-center vh-100 align-items-center justify-content-center header-custom text-light">
         <div class="col-12">
-          <h1 class="display-1 h1color mt-5">AMERICAN DONUTS</h1>
-          <h2 class="h2color display-1">LE CIAMBELLE COL BUCO</h2>
+          <h1 class=" h1header display-1 h1color mt-5">AMERICAN DONUTS</h1>
+          <h2 class=" h2header h2color display-1">LE CIAMBELLE COL BUCO</h2>
           <a href="./annunci.html"><button type="button" class="btnOrder">ORDINA ADESSO</button></a>
         </div>
       </div>
@@ -128,7 +128,7 @@
 <footer class="container-fluid">
   <div class="row justify-content-around align-items-center footer">
     <div class="col-12 col-md-3 d-flex justify-content-center">
-      <ul class="ulFooter">
+      <ul class="ulFooter d-none d-md-block">
         <li><a class="aCustom" href="#">Location</a></li>
         <li><a class="aCustom" href="#">Privacy Police</a></li>
         <li><a class="aCustom" href="#">Terms of Service</a></li>
@@ -137,17 +137,28 @@
       <div class="col-12 col-md-3 d-flex justify-content-center customFooter">
         <p><span class="fontPfooter">SIGN UP AL NOSTRO </span><span class="fontPfooter2"> AMERICAN DONUTS</span></p>
         <p class="text-light">Dove tutte le ciambelle hanno il buco</p>
-        <input class="ulFooter customInput" id="inputFooter" type="text" placeholder="Inserisci la tua email">
+        <div class="d-flex justify-content-around responsiveFooter align-items-center">
+          <input class="ulFooter customInput" id="inputFooter" type="text" placeholder="Inserisci la tua email">
+          <button type="button" class="btnOrder w-25 d-inline d-md-none" id="bottoneFooter">ISCRIVITI</button>
+        </div>
         <div id="containerFooter">
 
         </div>
-        <a href="#"><button type="button" class="btnOrder" id="bottoneFooter">ISCRIVITI</button></a>
+        <div class="justify-content-center">
+          <button type="button" class="btnOrder w-25 d-none d-md-inline" id="bottoneFooter">ISCRIVITI</button>
+
+        </div>
     </div>
     <div class="col-12 col-md-3 d-flex justify-content-center">
       <ul class="ulFooter">
         <li><i class="bi bi-instagram biSize"></i></li>
         <li><i class="bi bi-facebook biSize"></i></li>
         <li><i class="bi bi-twitter-x biSize"></i></li>
+      </ul>
+      <ul class="ulFooter d-block d-md-none">
+        <li><a class="aCustom" href="#">Location</a></li>
+        <li><a class="aCustom" href="#">Privacy Police</a></li>
+        <li><a class="aCustom" href="#">Terms of Service</a></li>
       </ul>
     </div>
   </div>

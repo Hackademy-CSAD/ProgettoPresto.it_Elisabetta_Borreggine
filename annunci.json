@@ -3,183 +3,183 @@
         "id": 1,
         "img": "./media/bacon.png",
         "name": "BACON",
-        "category": "normal",
-        "price": "7.00"
+        "category": "Normal",
+        "price": "10.00"
     },
 
     {
         "id": 2,
         "img": "./media/BurroDiArachidiDark.png",
         "name": "BURRO DI ARACHIDI DARK",
-        "category": "gluten free",
-        "price": "8.00"
+        "category": "Gluten free",
+        "price": "12.00"
     },
 
     {
         "id": 3,
         "img": "./media/BurroDiArachidi.png",
         "name": "BURRO DI ARACHIDI",
-        "category": "lactose free",
-        "price": "8.00"
+        "category": "Lactose free",
+        "price": "13.00"
     },
 
     {
         "id": 4,
         "img": "./media/cannella.png",
         "name": "CANNELLA",
-        "category": "gluten free",
-        "price": "8.00"
+        "category": "Gluten free",
+        "price": "12.50"
     },
 
     {
         "id": 5,
         "img": "./media/CioccolatoEArachidi.png",
         "name": "CIOCCOLATO E ARACHIDI",
-        "category": "lactose free",
-        "price": "8.00"
+        "category": "Lactose free",
+        "price": "13.50"
     },
 
     {
         "id": 6,
         "img": "./media/CioccolatoEGranella.png",
         "name": "CIOCCOLATO E GRANELLA",
-        "category": "normal",
-        "price": "7.00"
+        "category": "Normal",
+        "price": "10.00"
     },
 
     {
         "id": 8,
         "img": "./media/CioccolatoRosa.png",
         "name": "CIOCCOLATO ROSA",
-        "category": "gluten free",
-        "price": "8.00"
+        "category": "Gluten free",
+        "price": "11.50"
     },
 
     {
         "id": 9,
         "img": "./media/CioccolatoFondente.png",
         "name": "CIOCCOLATO FONDENTE",
-        "category": "lactose free",
-        "price": "8.00"
+        "category": "Lactose free",
+        "price": "10.00"
     },
 
     {
         "id": 10,
         "img": "./media/CioccolatoZebra.png",
         "name": "CIOCCOLATO ZEBRA",
-        "category": "normal",
-        "price": "7.00"
+        "category": "Normal",
+        "price": "8.00"
     },
 
     {
         "id": 11,
         "img": "./media/CoccoECioccolato.png",
         "name": "COCCO E CIOCCOLATO",
-        "category": "lactose free",
-        "price": "8.00"
+        "category": "Lactose free",
+        "price": "10.50"
     },
 
     {
         "id": 12,
         "img": "./media/cocco.png",
         "name": "COCCO",
-        "category": "gluten free",
-        "price": "8.00"
+        "category": "Gluten free",
+        "price": "11.00"
     },
 
     {
         "id": 13,
         "img": "./media/fragola.png",
         "name": "FRAGOLA",
-        "category": "normal",
-        "price": "7.00"
+        "category": "Normal",
+        "price": "8.00"
     },
 
     {
         "id": 14,
         "img": "./media/FrenchToast.png",
         "name": "FRENCH TOAST",
-        "category": "normal",
-        "price": "7.00"
+        "category": "Normal",
+        "price": "12.50"
     },
 
     {
         "id": 15,
         "img": "./media/GlassaAceto.png",
         "name": "GLASSA ACETO",
-        "category": "normal",
-        "price": "7.00"
+        "category": "Normal",
+        "price": "8.00"
     },
 
     {
         "id": 16,
         "img": "./media/GlassaCannella.png",
         "name": "GLASSA E CANNELLA",
-        "category": "gluten free",
-        "price": "8.00"
+        "category": "Gluten free",
+        "price": "9.50"
     },
 
     {
         "id": 17,
         "img": "./media/LamponeConfetti.png",
         "name": "LAMPONE CONFETTI",
-        "category": "lactose free",
-        "price": "8.00"
+        "category": "Lactose free",
+        "price": "11.50"
     },
 
     {
         "id": 18,
         "img": "./media/lampone.png",
         "name": "LAMPONE",
-        "category": "lactose free",
-        "price": "8.00"
+        "category": "Lactose free",
+        "price": "10.00"
     },
 
     {
         "id": 19,
         "img": "./media/limone.png",
         "name": "LIMONE",
-        "category": "lactose free",
-        "price": "8.00"
+        "category": "Lactose free",
+        "price": "10.00"
     },
 
     {
         "id": 20,
         "img": "./media/MirtilloPancake.png",
         "name": "MIRTILLO PANCAKE",
-        "category": "normal",
-        "price": "7.00"
+        "category": "Normal",
+        "price": "10.00"
     },
 
     {
         "id": 21,
         "img": "./media/mirtillo.png",
         "name": "MIRTILLO",
-        "category": "lactose free",
-        "price": "8.00"
+        "category": "Lactose free",
+        "price": "10.00"
     },
 
     {
         "id": 22,
         "img": "./media/PinaColada.png",
         "name": "PINA COLADA",
-        "category": "gluten free",
-        "price": "8.00"
+        "category": "Gluten free",
+        "price": "14.50"
     },
 
     {
         "id": 23,
         "img": "./media/vaniglia.png",
         "name": "VANIGLIA",
-        "category": "lactose free",
-        "price": "8.00"
+        "category": "Lactose free",
+        "price": "12.50"
     },
 
     {
         "id": 24,
         "img": "./media/ZuccheroAVelo.png",
         "name": "ZUCCHERO A VELO",
-        "category": "normal",
+        "category": "Normal",
         "price": "7.00"
     }
 ]
