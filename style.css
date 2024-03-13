@@ -182,6 +182,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
   }
   .container1-circular::before, .container2-circular::before, .container3-circular::before {
     content: "";
@@ -192,6 +193,8 @@ body{
     background-color: #ededed;
     border: 2px solid var(--acc) ;
   }
+
+
   
   
 

@@ -23,13 +23,15 @@ bottoneFooter.forEach(bottone =>{
         bottone.addEventListener('click', ()=>{
             let p = document.createElement('p')
         if(inputFooter.value == `` && confirm == false){
+            containerFooter.innerHTML = ``
             p.innerHTML="Campo obbligatoio"
             confirm = true
-            containerFooter.appendChild(p)
-        }else{
-            confirm = false
-           containerFooter.innerHTML=``
+        }else if(inputFooter.value != ``){
+            containerFooter.innerHTML = ``
+            p.innerHTML="registrazione avvenuta correttamente"
+            inputFooter.value = ``
         }  
+        containerFooter.appendChild(p)
         
     })
 })
@@ -79,3 +81,4 @@ let osservatore = new IntersectionObserver((entries)=>{
 
 
 
+osservatore.observe(firstNumber)
