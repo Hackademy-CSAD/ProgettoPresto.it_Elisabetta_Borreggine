@@ -11,24 +11,25 @@ document.addEventListener('scroll', ()=>{
         navbar.classList.remove('navbartextColor')
     }
 })
-//card dinamiche per chi siamo
+
+//js card chi siamo
 let chiSiamo = [
     {
         name:'Marge Simpson',
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloribus tempore illum veniam ipsum.',
-        job: 'CEO',
+        job: 'CHEF',
         img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1vGv4MX0ISqgjMxywvEjisNJjONtdAcE3gA&usqp=CAU'
     },
     {
         name:'Ned Flanders',
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloribus tempore illum veniam ipsum.',
-        job: 'CTO',
+        job: 'DIRETTORE CREATIVO',
         img:'https://www.gyfted.me/_next/image?url=%2Fimg%2Fcharacters%2Fned-flanders.png&w=640&q=75'
     },
     {   
         name:'Lisa Simpson',
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis doloribus tempore illum veniam ipsum.',
-        job: 'STUDENT',
+        job: 'SOUS CHEF',
         img:'https://facts.net/wp-content/uploads/2023/09/24-facts-about-lisa-simpson-the-simpsons-1693830278.jpg'
     },
 ]
@@ -48,6 +49,7 @@ chiSiamo.forEach(card=>{
   </div>`
   containerCard.appendChild(div)
 })
+
 
 //js Footer
 
