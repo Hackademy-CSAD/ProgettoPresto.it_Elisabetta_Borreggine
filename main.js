@@ -55,7 +55,7 @@ function createInterval(n,element, time, progress){ //aggiungiamo un parametro o
         if(counter < n){
             counter ++
             element.innerHTML = `${counter} %`
-            progress.style.background = `conic-gradient(var(--sec) ${counter * 3.6}deg, #ededed 0deg)` //aggiungiamo style a progress e con la string interpolation passiamo counter (che è 0 e gli facciamo eseguire un'operazione con l'angolo 3.6) e ci servirà per animare la progress bar
+            progress.style.background = `conic-gradient(var(--main) ${counter * 3.6}deg, #ffffff 0deg)` //aggiungiamo style a progress e con la string interpolation passiamo counter (che è 0 e gli facciamo eseguire un'operazione con l'angolo 3.6) e ci servirà per animare la progress bar
         }else{
             clearInterval(interval)
         }

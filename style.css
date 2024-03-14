@@ -2,7 +2,6 @@
     --main: #FB1986;
     --sec: #1FC3D4;
     --acc: #673C34;
-    --tir: #FDE600;
 }
 
 nav{
@@ -57,7 +56,7 @@ body{
 }
 
 .h2color:hover{
-    color: #1FC3D4;
+    color: var(--sec);
 }
 
 .h1header, .h2header{
@@ -75,21 +74,21 @@ body{
   }
 
 .btnOrder{
-    background-color: #1FC3D4;
+    background-color: var(--sec);
     font-family: "Madimi One";
     border-radius: 50px;
     font-size: 25px;
-    color: #FB1986;
+    color: var(--main);
     margin-top: 100px;
     border: none;
-    box-shadow: 0px 0px 2px 5px #FB1986 ;
+    box-shadow: 0px 0px 2px 5px var(--main) ;
     -webkit-text-stroke: 1px #000000;
 }
 
 .btnOrder:hover{
-    background-color: #FB1986;
-    color: #1FC3D4;
-    box-shadow: 0px 0px 2px 5px #1FC3D4;
+    background-color: var(--main);
+    color: var(--sec);
+    box-shadow: 0px 0px 2px 5px var(--sec);
 
 }
 /* css navbar */
@@ -102,7 +101,7 @@ body{
 }
 
 .navbar-brand:focus, .nav-link:focus, .bi-person-fill:focus, .bi-three-dots-vertical:focus{
-    color: #FB1986 !important;
+    color: var(--main) !important;
 }
 
 .navbar-toggler:focus{
@@ -141,7 +140,7 @@ body{
 }
 
 .swiperTitle{
-    color: #FB1986;
+    color: var(--main);
     justify-content: center;
     border: none;
     margin-top: 10vh;
@@ -149,7 +148,7 @@ body{
 }
 
 .swiperTitle:hover{
-    color: #1FC3D4;
+    color: var(--sec);
 }
 
 .swiper {
@@ -176,8 +175,8 @@ body{
     position: relative;
     height: 250px;
     width: 250px;
-    background: conic-gradient(var(--sec) 3.6deg,#ededed 0deg );
-    border: 2px solid var(--acc) ;
+    background: conic-gradient(var(--main) 3.6deg,white 0deg );
+    border: 5px solid var(--sec) ;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -190,17 +189,38 @@ body{
     height: 210px;
     width: 210px;
     border-radius: 50%;
-    background-color: #ededed;
-    border: 2px solid var(--acc) ;
+    background-color: #ffffff;
+    border: 5px solid var(--sec) ;
+  }
+
+  .customP{
+    font-size: 30px;
+    color: var(--acc);
+  }
+
+  .h5Counter1{
+    margin-left: 20px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px var(--main);
+  }
+
+  .h5Counter2{
+    margin-left: 35px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px var(--main);
+  }
+
+  .h5Counter3{
+    margin-left: 65px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px var(--main);
   }
 
 
-  
-  
 
 /* css card */
 .h2Annunci{
-    color: #FB1986;
+    color: var(--main);
     -webkit-text-stroke: 4px #000000;
     justify-content: center;
     margin-top: 10px;
@@ -247,7 +267,7 @@ h5{
     font-family: 'Poppins';
     font-size: 25px;
     margin-top: 50px;
-    color: #673C34;
+    color: var(--acc);
  }
  
  .cardChiSiamo{
@@ -308,14 +328,14 @@ footer{
   .fontPfooter{
     font-family: "Madimi One";
     font-weight: bold;
-    color: #1FC3D4;
+    color: var(--sec);
     font-size: x-large;
   }
 
   .fontPfooter2{
     font-family: "Madimi one";
     font-weight: bold;
-    color: #FB1986;
+    color: var(--main);
     margin-left: 8px;
     font-size: x-large;
   }
@@ -326,25 +346,20 @@ footer{
 
   .customInput{
     border-radius: 10px;
-    border-color: #1FC3D4;
+    border-color: var(--sec);
     border-width: 3px;
     height: 50px;
   }
 
   .aCustom{
     text-decoration: none;
-    color: #1FC3D4;
+    color: var(--sec);
     font-size: 20px;
   }
 
   .biSize{
     font-size: 20px;
   } 
-
-
-
-  
-
 
 /* media query per responsive */
 
@@ -382,6 +397,29 @@ footer{
     .cardChiSiamo{
         margin-top: 10px;
     }
+    .responsiveCounter{
+        display: flex;
+        flex-direction: column;
+    }
+    .responsiveCounter2{
+        margin-top: 30px;
+    }
+    .responsiveCounter3{
+        margin-top: 30px;
+    }
+    .h5Counter1{
+        margin-left: 115px;
+    }
+    .h5Counter2{
+        margin-left: 125px;
+    }
+    .h5Counter3{
+        margin-left: 155px;
+    }
     
+    .swiperTitle{
+        text-align: center;
+    }
+
 
 }
